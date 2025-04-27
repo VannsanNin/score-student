@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Student Score</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Website</h1>
+      <nav>
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="kh">Khmer</option>
+        </select>
+      </nav>
+    </header>
+    <div class="container">
+      <section class="section side-input">
+        <h1 id="input-title"></h1>
+
+        <form action="" class="form" id="student-form">
+          <label for="" id="name"></label>
+          <input type="text" id="student-name" />
+          <label for="" id="gender"></label>
+          <input type="text" id="student-gender" />
+          <label for="" id="math"></label>
+          <input type="number" id="student-math" />
+          <label for="" id="physic"></label>
+          <input type="number" id="student-physic" />
+          <label for="" id="chemistry"></label>
+          <input type="number" id="student-chemistry" />
+          <label for="" id="bio"></label>
+          <input type="number" id="student-bio" />
+          <label for="" id="khmer"></label>
+          <input type="number" id="student-khmer" />
+          <label for="" id="history"></label>
+          <input type="number" id="student-history" />
+          <label for="" id="english"></label>
+          <input type="number" id="student-english" />
+          <button type="submit" class="btn">Add Student</button>
+        </form>
+      </section>
+      <section class="section side-pre">
+        <h1 id="national"></h1>
+        <h1 id="national-motto"></h1>
+        <h1 id="school-name"></h1>
+        <h1 id="pre-title"></h1>
+        <table id="student-table">
+          <thead>
+            <tr>
+              <th class="no" id="no"></th>
+              <th class="table-name" id="table-name"></th>
+              <th class="table-gender" id="table-gender"></th>
+              <th class="table-math" id="table-math"></th>
+              <th class="table-physic" id="table-physic"></th>
+              <th class="table-chemistry" id="table-chemistry"></th>
+              <th class="table-bio" id="table-bio"></th>
+              <th class="table-khmer" id="table-khmer"></th>
+              <th class="table-history" id="table-history"></th>
+              <th class="table-english" id="table-english"></th>
+              <th class="score-total" id="score-total"></th>
+              <th class="average" id="average"></th>
+            </tr>
+          </thead>
+          <tbody id="student-table-body">
+            <!-- New students will be added here -->
+          </tbody>
+        </table>
+      </section>
+      <button id="download-pdf" class="download">Download as PDF</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </body>
+</html>

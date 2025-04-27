@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moul&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  background-color: gray;
+  font-family: "JetBrains Mono", "Kantumruy Pro";
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+#languageSelect {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+/* button */
+.btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.download {
+  position: fixed;
+  width: 200px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  z-index: 1000;
+}
+.container {
+  display: flex;
+}
+.section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.side-input {
+  width: 30%;
+}
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+#national,
+#national-motto {
+  font-family: "Moul";
+  margin: 0;
+}
+/* form section */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+
+label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+input {
+  padding: 14px 16px;
+  border: 1px solid #8a8b8d;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+/* table style */
+
+table {
+  border-collapse: collapse;
+  width: 95%;
+}
+table thead {
+  background-color: #4a6cf7;
+  color: white;
+}
+th,
+td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eaedf3;
+}
+th {
+  font-weight: 600;
+  font-size: 16px;
+}
+tbody tr:nth-child(even) {
+  background-color: #f8f9fd;
+}
+
+tbody tr:hover {
+  background-color: #edf2ff;
+  transition: background-color 0.3s ease;
+}
